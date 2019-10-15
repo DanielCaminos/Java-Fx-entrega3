@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane prefHeight="655.0" prefWidth="843.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerDisponibilidad">
+   <children>
+      <AnchorPane prefHeight="128.0" prefWidth="737.0" style="-fx-background-color: #2b8fa6;" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+         <children>
+            <Label layoutX="32.0" layoutY="77.0" style="-fx-font-weight: 700;" text="Vigencia hasta:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <DatePicker layoutX="152.0" layoutY="73.0" />
+            <Label layoutX="32.0" layoutY="29.0" style="-fx-font-weight: 700;" text="Bombero:">
+               <font>
+                  <Font size="15.0" />
+               </font>
+            </Label>
+            <TextField layoutX="152.0" layoutY="27.0" prefHeight="25.0" prefWidth="174.0" text="Gonzalo Ochoa" />
+
+         </children>
+      </AnchorPane>
+      <AnchorPane layoutY="227.0" prefHeight="115.0" prefWidth="843.0" style="-fx-background-color: #2b8fa6;" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+         <children>
+            <Button fx:id="btnAceptar" layoutX="629.0" layoutY="56.0" mnemonicParsing="false" text="Aceptar" />
+            <Button fx:id="btnCancelar" layoutX="731.0" layoutY="56.0" mnemonicParsing="false" text="Cancelar" />
+         </children>
+      </AnchorPane>
+      <TableView fx:id="tableDispobilidad" layoutX="268.0" layoutY="140.0" prefHeight="384.0" prefWidth="843.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0">
+        <columns>
+          <TableColumn fx:id="colDias" prefWidth="162.0" text="Dias" />
+          <TableColumn fx:id="colDesdeDisponible" prefWidth="153.0" text="Hora desde disponible" />
+            <TableColumn fx:id="colHastaDisponible" prefWidth="146.0" text="Hora hasta disponible" />
+            <TableColumn fx:id="colDesdeGuardia" prefWidth="160.0" text="Hora desde guardia" />
+            <TableColumn fx:id="colHastaGuardia" prefWidth="165.0" text="Hora hasta guardia" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>
