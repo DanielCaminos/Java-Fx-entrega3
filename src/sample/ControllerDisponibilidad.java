@@ -71,7 +71,7 @@ public class ControllerDisponibilidad implements Initializable {
 
 
     private void initCols()
-//    String dia, String horaDisponibleDesde, String horaDisponibleHasta, JFXTimePicker horaDesdeGuardia, com.jfoenix.controls.JFXTimePicker horaHastaGuardia
+
     {
         colDias.setCellValueFactory(new PropertyValueFactory<>("dia")) ;
         colDesdeDisponible.setCellValueFactory(new PropertyValueFactory<>("horaDisponibleDesde")) ;

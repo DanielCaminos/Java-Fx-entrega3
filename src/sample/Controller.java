@@ -110,7 +110,7 @@ public class Controller implements Initializable {
 
 
     private void initCols()
-            //String name, String surName, String adress, String dni, String email, Button disponibilidad, Button incluir
+
     {
         rbtnIncluir.setCellValueFactory(new PropertyValueFactory<>("incluir")) ;
         colName.setCellValueFactory(new PropertyValueFactory<>("name")) ;
